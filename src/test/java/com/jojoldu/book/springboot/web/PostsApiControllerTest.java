@@ -65,8 +65,8 @@ public class PostsApiControllerTest {
     @Test
     public void Posts_수정된다() throws Exception{
         Posts savedPosts = postsRepository.save(Posts.builder()
-                .title("title")
-                .content("content")
+                .title("title2")
+                .content("content2")
                 .author("author")
                 .build());
 
@@ -95,5 +95,4 @@ public class PostsApiControllerTest {
         assertThat(all.get(0).getContent()).isEqualTo(expectedContent);
 
     }
-
 }
