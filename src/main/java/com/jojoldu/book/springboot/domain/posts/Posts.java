@@ -30,5 +30,10 @@ public class Posts {
 
     }
 
+    public void update(String tltle, String content){
+        this.title  = title;
+        this.content = content;
+    }
+
 
 }
